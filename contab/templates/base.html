@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Contabidad</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/static/css/stilo.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <header>
+        <h1>{% block titulo %}Contabilidad Loviz DelCarpio{% endblock %}</h1>
+    </header>
+    {% include 'menu.html'%}
+    {% block acciones%}{%endblock%}
+    <section>
+        {% block subtitulo%}{%endblock%}
+        {% block content%}{%endblock%}
+    </section>
+    <footer></footer>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>

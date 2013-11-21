@@ -1,0 +1,20 @@
+{% extends "mostrardatos.html" %}
+
+{%block titulotabla%}
+	{%for dato in datos_tablas%}
+		<th>{{dato}}</th>
+	{%endfor%}
+{%endblock%}
+
+{% block acciones%} 
+	<a href="/contab/materiales/add" class="btn btn-default active right" role="button">Agregar material</a>
+{% endblock%}
+
+{%block campostabla%}
+	{% for material in materiales %}
+		<tr>
+			<td>{{material.nombre}}</td>
+			<td>{{material.precio_a_compra}}</td>
+		</tr>
+	{% endfor%}
+{%endblock%}

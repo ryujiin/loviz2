@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block titulo %} Materiales {% endblock %}
+
+{%block content %}
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				{%block titulotabla%}
+				{%endblock%}
+			</tr>
+		</thead>
+		<tbody>
+			{%block campostabla%}
+			{%endblock%}
+		</tbody>
+	</table>
+{% endblock %}

@@ -1,0 +1,10 @@
+body{
+	padding: 20px;
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}

@@ -1,0 +1,22 @@
+{% extends "mostrardatos.html" %}
+
+{%block titulotabla%}
+	{%for dato in datos_tablas%}
+		<th>{{dato}}</th>
+	{%endfor%}
+{%endblock%}
+
+{%block acciones%} 
+<a href="/contab/compras/add" class="btn btn-default active right" role="button">Nueva Compra</a>
+{% endblock%}
+
+{%block campostabla%}
+	{% for compra in compras %}
+		<tr>
+			<td>{{compra.material}}</td>
+			<td>{{compra.cantidad}}</td>
+			<td>{{compra.fecha}}</td>
+			<td>{{compra.soles_comprados}}</td>
+		</tr>
+	{% endfor%}
+{%endblock%}
